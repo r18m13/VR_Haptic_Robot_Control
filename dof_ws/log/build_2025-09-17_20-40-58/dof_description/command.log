@@ -1,0 +1,2 @@
+Invoking command in '/home/ram/projects/dof_ws/build/dof_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ram/projects/dof_ws/build/dof_description -- -j8 -l8
+Invoked command in '/home/ram/projects/dof_ws/build/dof_description' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ram/projects/dof_ws/build/dof_description -- -j8 -l8

@@ -1,0 +1,33 @@
+[0.014s] Invoking command in '/home/ram/projects/dof_ws/build/dof_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ram/projects/dof_ws/build/dof_description -- -j8 -l8
+[0.061s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.360s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.384s] -- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.440s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.458s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.482s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.510s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.629s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.632s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.749s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.870s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.896s] -- Found trajectory_msgs: 5.3.6 (/opt/ros/jazzy/share/trajectory_msgs/cmake)
+[0.984s] [31mCMake Error at CMakeLists.txt:15 (find_package):
+[0.985s]   By not providing "Findament_lint_auto.cmake" in CMAKE_MODULE_PATH this
+[0.985s]   project has asked CMake to find a package configuration file provided by
+[0.985s]   "ament_lint_auto", but CMake did not find one.
+[0.985s] 
+[0.985s]   Could not find a package configuration file provided by "ament_lint_auto"
+[0.985s]   with any of the following names:
+[0.985s] 
+[0.985s]     ament_lint_autoConfig.cmake
+[0.986s]     ament_lint_auto-config.cmake
+[0.986s] 
+[0.986s]   Add the installation prefix of "ament_lint_auto" to CMAKE_PREFIX_PATH or
+[0.986s]   set "ament_lint_auto_DIR" to a directory containing one of the above files.
+[0.986s]   If "ament_lint_auto" provides a separate development package or SDK, be
+[0.986s]   sure it has been installed.
+[0.986s] 
+[0.986s] [0m
+[0.986s] -- Configuring incomplete, errors occurred!
+[0.994s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.997s] Invoked command in '/home/ram/projects/dof_ws/build/dof_description' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ram/projects/dof_ws/build/dof_description -- -j8 -l8

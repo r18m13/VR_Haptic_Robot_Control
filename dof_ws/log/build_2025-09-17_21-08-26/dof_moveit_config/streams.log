@@ -1,0 +1,46 @@
+[0.012s] Invoking command in '/home/ram/projects/dof_ws/build/dof_moveit_config': CMAKE_PREFIX_PATH=/home/ram/projects/dof_ws/install/dof_description:/home/ram/projects/dof_ws/install/dof_moveit_config:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ram/projects/dof_ws/build/dof_moveit_config -- -j8 -l8
+[0.049s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.365s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.512s] -- Configuring done (0.5s)
+[0.518s] -- Generating done (0.0s)
+[0.520s] -- Build files have been written to: /home/ram/projects/dof_ws/build/dof_moveit_config
+[0.553s] Invoked command in '/home/ram/projects/dof_ws/build/dof_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/ram/projects/dof_ws/install/dof_description:/home/ram/projects/dof_ws/install/dof_moveit_config:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ram/projects/dof_ws/build/dof_moveit_config -- -j8 -l8
+[0.555s] Invoking command in '/home/ram/projects/dof_ws/build/dof_moveit_config': CMAKE_PREFIX_PATH=/home/ram/projects/dof_ws/install/dof_description:/home/ram/projects/dof_ws/install/dof_moveit_config:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ram/projects/dof_ws/build/dof_moveit_config
+[0.567s] -- Install configuration: ""
+[0.567s] -- Execute custom install script
+[0.568s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/ament_index/resource_index/package_run_dependencies/dof_moveit_config
+[0.568s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/ament_index/resource_index/parent_prefix_path/dof_moveit_config
+[0.568s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/environment/ament_prefix_path.sh
+[0.568s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/environment/ament_prefix_path.dsv
+[0.569s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/environment/path.sh
+[0.569s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/environment/path.dsv
+[0.569s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/local_setup.bash
+[0.570s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/local_setup.sh
+[0.570s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/local_setup.zsh
+[0.570s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/local_setup.dsv
+[0.570s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/package.dsv
+[0.585s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/ament_index/resource_index/packages/dof_moveit_config
+[0.585s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/cmake/dof_moveit_configConfig.cmake
+[0.585s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/cmake/dof_moveit_configConfig-version.cmake
+[0.585s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/package.xml
+[0.586s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/launch/demo.launch.py
+[0.586s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/launch/move_group.launch.py
+[0.587s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/launch/moveit_rviz.launch.py
+[0.587s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/launch/rsp.launch.py
+[0.587s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/launch/setup_assistant.launch.py
+[0.587s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/launch/spawn_controllers.launch.py
+[0.588s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[0.588s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/launch/warehouse_db.launch.py
+[0.588s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/config/dof.ros2_control.xacro
+[0.588s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/config/dof.srdf
+[0.589s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/config/dof.urdf.xacro
+[0.589s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/config/initial_positions.yaml
+[0.589s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/config/joint_limits.yaml
+[0.589s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/config/kinematics.yaml
+[0.590s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/config/moveit.rviz
+[0.590s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/config/moveit_controllers.yaml
+[0.590s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/config/pilz_cartesian_limits.yaml
+[0.590s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/config/ros2_controllers.yaml
+[0.590s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/config/sensors_3d.yaml
+[0.604s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_moveit_config/share/dof_moveit_config/.setup_assistant
+[0.606s] Invoked command in '/home/ram/projects/dof_ws/build/dof_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/ram/projects/dof_ws/install/dof_description:/home/ram/projects/dof_ws/install/dof_moveit_config:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ram/projects/dof_ws/build/dof_moveit_config

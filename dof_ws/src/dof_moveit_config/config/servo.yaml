@@ -1,0 +1,20 @@
+servo_node:
+  ros__parameters:
+    move_group_name: "dof"
+    servo_publish_rate: 100
+    cartesian_command_scale: 1.0
+    joint_command_scale: 1.0
+    low_pass_filter_coeff: 0.1
+    moveit_controller_name: "dof_controller"
+    joint_names:
+      - revolute_1
+      - revolute_2
+      - revolute_4
+      - revolute_5
+      - revolute_6
+      - revolute_7
+      - revolute_8
+    collision_check_type: "none"
+    max_linear_velocity: 0.5
+    max_angular_velocity: 1.0
+    max_joint_velocity: 1.0

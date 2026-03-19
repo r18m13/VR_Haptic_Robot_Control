@@ -1,0 +1,36 @@
+[0.010s] Invoking command in '/home/ram/projects/dof_ws/build/dof_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ram/projects/dof_ws/build/dof_description -- -j8 -l8
+[0.051s] Invoked command in '/home/ram/projects/dof_ws/build/dof_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ram/projects/dof_ws/build/dof_description -- -j8 -l8
+[0.061s] Invoking command in '/home/ram/projects/dof_ws/build/dof_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ram/projects/dof_ws/build/dof_description
+[0.069s] -- Install configuration: ""
+[0.069s] -- Execute custom install script
+[0.069s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/dof.gazebo
+[0.069s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/dof.trans
+[0.070s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/dof.xacro
+[0.070s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/materials.xacro
+[0.070s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/base_link.stl
+[0.070s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_1_1.stl
+[0.070s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_2_1.stl
+[0.070s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_3_1.stl
+[0.070s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_4_1.stl
+[0.071s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_5_1.stl
+[0.071s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_6_1.stl
+[0.071s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_7_1.stl
+[0.071s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_8_1.stl
+[0.071s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/launch/display.launch.py
+[0.071s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/launch/gazebo.launch.py
+[0.071s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/ament_index/resource_index/package_run_dependencies/dof_description
+[0.071s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/ament_index/resource_index/parent_prefix_path/dof_description
+[0.072s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/environment/ament_prefix_path.sh
+[0.072s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/environment/ament_prefix_path.dsv
+[0.072s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/environment/path.sh
+[0.072s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/environment/path.dsv
+[0.072s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/local_setup.bash
+[0.072s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/local_setup.sh
+[0.072s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/local_setup.zsh
+[0.073s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/local_setup.dsv
+[0.073s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/package.dsv
+[0.082s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/ament_index/resource_index/packages/dof_description
+[0.082s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/cmake/dof_descriptionConfig.cmake
+[0.082s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/cmake/dof_descriptionConfig-version.cmake
+[0.082s] -- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/package.xml
+[0.084s] Invoked command in '/home/ram/projects/dof_ws/build/dof_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ram/projects/dof_ws/build/dof_description

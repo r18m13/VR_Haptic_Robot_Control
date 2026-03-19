@@ -1,0 +1,74 @@
+[0.014s] Invoking command in '/home/ram/projects/dof_ws/build/dof_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ram/projects/dof_ws/src/dof_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ram/projects/dof_ws/install/dof_description
+[0.100s] -- The C compiler identification is GNU 13.3.0
+[0.186s] -- The CXX compiler identification is GNU 13.3.0
+[0.210s] -- Detecting C compiler ABI info
+[0.340s] -- Detecting C compiler ABI info - done
+[0.355s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.356s] -- Detecting C compile features
+[0.356s] -- Detecting C compile features - done
+[0.370s] -- Detecting CXX compiler ABI info
+[0.520s] -- Detecting CXX compiler ABI info - done
+[0.536s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.536s] -- Detecting CXX compile features
+[0.537s] -- Detecting CXX compile features - done
+[0.544s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.779s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.887s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.989s] -- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.085s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.117s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.153s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.192s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.378s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.386s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.561s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.595s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.633s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.796s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.824s] -- Found trajectory_msgs: 5.3.6 (/opt/ros/jazzy/share/trajectory_msgs/cmake)
+[1.895s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.078s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.078s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.079s] -- Added test 'lint_cmake' to check CMake code style
+[2.081s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.084s] -- Added test 'xmllint' to check XML markup files
+[2.087s] -- Configuring done (2.1s)
+[2.094s] -- Generating done (0.0s)
+[2.097s] -- Build files have been written to: /home/ram/projects/dof_ws/build/dof_description
+[2.110s] Invoked command in '/home/ram/projects/dof_ws/build/dof_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ram/projects/dof_ws/src/dof_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ram/projects/dof_ws/install/dof_description
+[2.112s] Invoking command in '/home/ram/projects/dof_ws/build/dof_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ram/projects/dof_ws/build/dof_description -- -j8 -l8
+[2.175s] Invoked command in '/home/ram/projects/dof_ws/build/dof_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ram/projects/dof_ws/build/dof_description -- -j8 -l8
+[2.190s] Invoking command in '/home/ram/projects/dof_ws/build/dof_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ram/projects/dof_ws/build/dof_description
+[2.202s] -- Install configuration: ""
+[2.203s] -- Execute custom install script
+[2.204s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/dof.gazebo
+[2.217s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/dof.trans
+[2.231s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/dof.xacro
+[2.245s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/materials.xacro
+[2.259s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/base_link.stl
+[2.272s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_1_1.stl
+[2.286s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_2_1.stl
+[2.299s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_3_1.stl
+[2.314s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_4_1.stl
+[2.327s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_5_1.stl
+[2.341s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_6_1.stl
+[2.354s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_7_1.stl
+[2.368s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_8_1.stl
+[2.382s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/launch/display.launch.py
+[2.396s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/launch/gazebo.launch.py
+[2.410s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/ament_index/resource_index/package_run_dependencies/dof_description
+[2.424s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/ament_index/resource_index/parent_prefix_path/dof_description
+[2.438s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/environment/ament_prefix_path.sh
+[2.452s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/environment/ament_prefix_path.dsv
+[2.466s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/environment/path.sh
+[2.480s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/environment/path.dsv
+[2.493s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/local_setup.bash
+[2.507s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/local_setup.sh
+[2.521s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/local_setup.zsh
+[2.535s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/local_setup.dsv
+[2.549s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/package.dsv
+[2.563s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/ament_index/resource_index/packages/dof_description
+[2.576s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/cmake/dof_descriptionConfig.cmake
+[2.590s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/cmake/dof_descriptionConfig-version.cmake
+[2.604s] -- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/package.xml
+[2.620s] Invoked command in '/home/ram/projects/dof_ws/build/dof_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ram/projects/dof_ws/build/dof_description

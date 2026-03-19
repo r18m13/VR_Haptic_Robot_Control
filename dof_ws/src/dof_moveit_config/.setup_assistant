@@ -1,0 +1,31 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: dof_description
+    relative_path: urdf/dof.xacro
+  srdf:
+    relative_path: config/dof.srdf
+  package_settings:
+    author_name: dusty
+    author_email: b.rammalladi@gmail.com
+    generated_timestamp: 1758908545
+  control_xacro:
+    command:
+      - position
+      - velocity
+      - effort
+    state:
+      - position
+      - velocity
+      - effort
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+      - velocity
+      - effort
+    state:
+      - position
+      - velocity
+      - effort

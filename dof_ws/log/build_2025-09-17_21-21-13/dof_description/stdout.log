@@ -1,0 +1,35 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/dof.gazebo
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/dof.trans
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/dof.xacro
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/materials.xacro
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/urdf/ros2_control.xacro
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/base_link.stl
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_1_1.stl
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_2_1.stl
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_3_1.stl
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_4_1.stl
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_5_1.stl
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_6_1.stl
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_7_1.stl
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/meshes/link_8_1.stl
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/launch/display.launch.py
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/launch/gazebo.launch.py
+-- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/config/controllers.yaml
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/config/gz_bridge.yaml
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/ament_index/resource_index/package_run_dependencies/dof_description
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/ament_index/resource_index/parent_prefix_path/dof_description
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/environment/path.sh
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/environment/path.dsv
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/local_setup.bash
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/local_setup.sh
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/local_setup.zsh
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/local_setup.dsv
+-- Symlinking: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/package.dsv
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/ament_index/resource_index/packages/dof_description
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/cmake/dof_descriptionConfig.cmake
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/cmake/dof_descriptionConfig-version.cmake
+-- Up-to-date symlink: /home/ram/projects/dof_ws/install/dof_description/share/dof_description/package.xml

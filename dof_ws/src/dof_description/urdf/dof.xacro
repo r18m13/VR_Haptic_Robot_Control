@@ -1,0 +1,269 @@
+<?xml version="1.0" ?>
+<robot name="dof" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find dof_description)/urdf/materials.xacro" />
+<xacro:property name="gazebo_control" value="false" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-8.739657509618157e-18 -8.739657509618157e-18 0.02584905660377358" rpy="0 0 0"/>
+    <mass value="2.042280661759427"/>
+    <inertia ixx="0.001362" iyy="0.001362" izz="0.001605" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="red"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_1_1">
+  <inertial>
+    <origin xyz="2.3524251218189366e-16 0.014974083891179248 0.035655581197820606" rpy="0 0 0"/>
+    <mass value="3.262589887941621"/>
+    <inertia ixx="0.003411" iyy="0.002438" izz="0.003281" ixy="0.0" iyz="-0.000317" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.055" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="blue"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.055" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_2_1">
+  <inertial>
+    <origin xyz="2.297717551265364e-16 0.035655580687491875 0.014974084374495322" rpy="0 0 0"/>
+    <mass value="3.262589901545991"/>
+    <inertia ixx="0.003411" iyy="0.003281" izz="0.002438" ixy="-0.0" iyz="-0.000317" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.06 -0.095" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="blue"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.06 -0.095" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_3_1">
+  <inertial>
+    <origin xyz="0.0 5.960464899423812e-10 0.07499999970197677" rpy="0 0 0"/>
+    <mass value="5.2020356478777865"/>
+    <inertia ixx="0.011583" iyy="0.011583" izz="0.003658" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.1 -0.155" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.1 -0.155" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_4_1">
+  <inertial>
+    <origin xyz="-4.704850156962961e-16 -0.014974083732903307 0.03565558091031645" rpy="0 0 0"/>
+    <mass value="3.2625899480465512"/>
+    <inertia ixx="0.003411" iyy="0.002438" izz="0.003281" ixy="-0.0" iyz="0.000317" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.1 -0.305" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="blue"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.1 -0.305" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_5_1">
+  <inertial>
+    <origin xyz="-7.111982949821138e-16 -0.03565558019427084 0.014974084426305323" rpy="0 0 0"/>
+    <mass value="3.262589877210741"/>
+    <inertia ixx="0.003411" iyy="0.003281" izz="0.002438" ixy="0.0" iyz="0.000317" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.04 -0.345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="blue"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.04 -0.345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_6_1">
+  <inertial>
+    <origin xyz="2.918082330107905e-16 0.0055173768124723585 0.03448262292119847" rpy="0 0 0"/>
+    <mass value="2.568985118074497"/>
+    <inertia ixx="0.002047" iyy="0.001933" izz="0.001933" ixy="0.0" iyz="-0.000183" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.405" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.405" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_7_1">
+  <inertial>
+    <origin xyz="1.7421601609911105e-16 0.03670600347430395 0.029487547207557585" rpy="0 0 0"/>
+    <mass value="4.302997076398886"/>
+    <inertia ixx="0.006712" iyy="0.006567" izz="0.003184" ixy="-0.0" iyz="-0.000523" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.04 -0.445" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="blue"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.04 -0.445" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_8_1">
+  <inertial>
+    <origin xyz="0.0 5.960468923982276e-10 0.012499999701976794" rpy="0 0 0"/>
+    <mass value="1.2559999812841276"/>
+    <inertia ixx="0.000735" iyy="0.000735" izz="0.00134" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.08 -0.535" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="green"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.08 -0.535" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find dof_description)/meshes/link_8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="revolute_1" type="continuous">
+  <origin xyz="0.0 0.0 0.055" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link_1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <dynamics damping="10.0" friction="10.0"/>
+</joint>
+
+<joint name="revolute_2" type="revolute">
+  <origin xyz="0.0 0.06 0.04" rpy="0 0 0"/>
+  <parent link="link_1_1"/>
+  <child link="link_2_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+  <dynamics damping="10.0" friction="10.0"/>
+</joint>
+
+<joint name="rigid_3" type="fixed">
+  <origin xyz="0.0 0.04 0.06" rpy="0 0 0"/>
+  <parent link="link_2_1"/>
+  <child link="link_3_1"/>
+  <dynamics damping="10.0" friction="10.0"/>
+</joint>
+
+<joint name="revolute_4" type="continuous">
+  <origin xyz="0.0 0.0 0.15" rpy="0 0 0"/>
+  <parent link="link_3_1"/>
+  <child link="link_4_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <dynamics damping="10.0" friction="10.0"/>
+</joint>
+
+<joint name="revolute_5" type="revolute">
+  <origin xyz="0.0 -0.06 0.04" rpy="0 0 0"/>
+  <parent link="link_4_1"/>
+  <child link="link_5_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="2.356194" lower="-2.356194" effort="100" velocity="100"/>
+  <dynamics damping="10.0" friction="10.0"/>
+</joint>
+
+<joint name="revolute_6" type="continuous">
+  <origin xyz="0.0 -0.04 0.06" rpy="0 0 0"/>
+  <parent link="link_5_1"/>
+  <child link="link_6_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <dynamics damping="10.0" friction="10.0"/>
+</joint>
+
+<joint name="revolute_7" type="continuous">
+  <origin xyz="0.0 0.04 0.04" rpy="0 0 0"/>
+  <parent link="link_6_1"/>
+  <child link="link_7_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <dynamics damping="10.0" friction="10.0"/>
+</joint>
+
+<joint name="revolute_8" type="continuous">
+  <origin xyz="0.0 0.04 0.09" rpy="0 0 0"/>
+  <parent link="link_7_1"/>
+  <child link="link_8_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <dynamics damping="10.0" friction="10.0"/>
+</joint>
+
+<!--world-->
+<link name="world"></link>
+<joint name="base_joint" type="fixed">
+  <origin xyz="0 0 0" rpy="0 0 0" />
+  <parent link="world" />
+  <child link="base_link" />
+</joint>
+
+
+</robot>

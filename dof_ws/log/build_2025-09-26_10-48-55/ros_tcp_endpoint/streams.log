@@ -1,0 +1,32 @@
+[0.847s] Invoking command in '/home/ram/projects/dof_ws/build/ros_tcp_endpoint': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ram/projects/dof_ws/build/ros_tcp_endpoint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ram/projects/dof_ws/install/ros_tcp_endpoint/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ram/projects/dof_ws/build/ros_tcp_endpoint/build --no-deps symlink_data
+[0.966s] /usr/lib/python3/dist-packages/setuptools/dist.py:744: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[0.966s] !!
+[0.967s] 
+[0.967s]         ********************************************************************************
+[0.967s]         Usage of dash-separated 'script-dir' will not be supported in future
+[0.967s]         versions. Please use the underscore name 'script_dir' instead.
+[0.967s] 
+[0.967s]         This deprecation is overdue, please update your project and remove deprecated
+[0.967s]         calls to avoid build errors in the future.
+[0.967s] 
+[0.967s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[0.967s]         ********************************************************************************
+[0.967s] 
+[0.967s] !!
+[0.967s]   opt = self.warn_dash_deprecation(opt, section)
+[1.177s] running develop
+[1.401s] running egg_info
+[1.423s] writing ros_tcp_endpoint.egg-info/PKG-INFO
+[1.424s] writing dependency_links to ros_tcp_endpoint.egg-info/dependency_links.txt
+[1.424s] writing entry points to ros_tcp_endpoint.egg-info/entry_points.txt
+[1.424s] writing requirements to ros_tcp_endpoint.egg-info/requires.txt
+[1.424s] writing top-level names to ros_tcp_endpoint.egg-info/top_level.txt
+[1.468s] reading manifest file 'ros_tcp_endpoint.egg-info/SOURCES.txt'
+[1.469s] writing manifest file 'ros_tcp_endpoint.egg-info/SOURCES.txt'
+[1.492s] running build_ext
+[1.492s] Creating /home/ram/projects/dof_ws/install/ros_tcp_endpoint/lib/python3.12/site-packages/ros-tcp-endpoint.egg-link (link to .)
+[1.493s] Installing default_server_endpoint script to /home/ram/projects/dof_ws/install/ros_tcp_endpoint/lib/ros_tcp_endpoint
+[1.493s] 
+[1.494s] Installed /home/ram/projects/dof_ws/build/ros_tcp_endpoint
+[1.494s] running symlink_data
+[1.521s] Invoked command in '/home/ram/projects/dof_ws/build/ros_tcp_endpoint' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ram/projects/dof_ws/build/ros_tcp_endpoint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ram/projects/dof_ws/install/ros_tcp_endpoint/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ram/projects/dof_ws/build/ros_tcp_endpoint/build --no-deps symlink_data
