@@ -108,7 +108,6 @@ Unity VR Interface (ROS-TCP Connector)
 ├── meshes/                      # STL and mesh assets
 ├── launch/                      # ROS2 launch files
 ├── config/                      # Configuration files
-└── README.md
 ```
 
 ---
