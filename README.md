@@ -1,129 +1,76 @@
-# Real-Time Robotic Manipulation with Haptic Teleoperation and VR Control
+# Real-Time Haptic Teleoperation using Novint Falcon and MoveIt Servo (ROS2)
 
-An end-to-end teleoperation system enabling **low-latency, high-precision robotic manipulation** using a Novint Falcon haptic device and immersive VR interface, integrated with ROS2-based control pipelines.
+A high-frequency teleoperation node that converts Novint Falcon haptic input into real-time Cartesian velocity commands for robotic manipulation using MoveIt Servo.
 
 ---
 
 ## 🚀 Overview
 
-This project implements a **real-time human-in-the-loop robotic manipulation system** that bridges haptic input, VR visualization, and robot control.
+This project implements a **real-time control interface** between a Novint Falcon haptic device and a robotic manipulator via ROS2.
 
-The system allows an operator to intuitively control a robotic arm using a **3-DOF haptic device**, with motion mapped into robot workspace coordinates and executed through a ROS2 control pipeline.
-
-Key capabilities include:
-
-* Real-time teleoperation with motion scaling
-* Low-latency control loop for stable manipulation
-* VR-based visualization and interaction (Unity OpenXR)
-* Modular ROS2 architecture for extensibility and deployment
-
----
-
-## 🎥 Demo
-
-### Haptic Teleoperation + Control + Testing using Panda Arm
-
-*https://www.youtube.com/watch?v=pp2FSn9sudI&list=PLwUycyXYUfwRI-hcJVh3UcAR0WU5qAu_A&index=1*
-
-
-> Demonstrates smooth end-effector tracking, intuitive control, and stable interaction under continuous input.
-
----
-
-## 🧠 System Architecture
-
-The system is designed as a **modular, distributed robotics pipeline**:
+The system reads 3D positional input from the Falcon, processes it through normalization and filtering, and publishes velocity commands to:
 
 ```
-Novint Falcon (Haptic Input)
-        ↓
-C++ Interface (libnifalcon)
-        ↓
-ROS2 Node (Input Processing)
-        ↓
-Control Mapping + Motion Scaling
-        ↓
-Robot Control Pipeline (ROS2)
-        ↓
-URDF Robot Model (Gazebo / Real Robot)
-        ↑
-Unity VR Interface (ROS-TCP Connector)
+/servo_node/delta_twist_cmds
 ```
 
-### Core Components
-
-* **Haptic Interface Layer**
-
-  * Reads 3D positional input from Falcon device
-  * Converts raw input into usable control signals
-
-* **Control Mapping Layer**
-
-  * Applies motion scaling and coordinate transformations
-  * Ensures stable and intuitive operator control
-
-* **ROS2 Middleware**
-
-  * Handles communication between perception, control, and visualization
-  * Enables modular and scalable system design
-
-* **VR Interface (Unity OpenXR)**
-
-  * Provides immersive visualization of robot state
-  * Enables interactive teleoperation feedback loop
+This enables **smooth, intuitive teleoperation** of a robotic arm using MoveIt Servo.
 
 ---
 
 ## ⚙️ Key Features
 
-* Real-time haptic teleoperation using Novint Falcon
-* Low-latency control pipeline for responsive manipulation
-* Motion scaling for precision control in constrained workspaces
-* ROS2-based modular system design
-* VR integration for immersive robot interaction
-* URDF-based robot modeling and simulation in Gazebo
+* Real-time haptic teleoperation (200 Hz control loop)
+* Direct integration with MoveIt Servo
+* Cartesian velocity control using `TwistStamped`
+* Input normalization from device workspace to robot workspace
+* Deadzone filtering to eliminate drift and noise
+* Firmware handling and device initialization for Novint Falcon
+
+---
+
+## 🧠 System Pipeline
+
+```
+Novint Falcon Input
+        ↓
+libnifalcon (C++ Interface)
+        ↓
+Position Normalization [-0.06, 0.06] → [-1, 1]
+        ↓
+Deadzone Filtering
+        ↓
+Velocity Scaling (Max: 0.2 m/s)
+        ↓
+ROS2 Publisher (/servo_node/delta_twist_cmds)
+        ↓
+MoveIt Servo → Robot Motion
+```
 
 ---
 
 ## 🧪 Technical Highlights
 
-* Designed a **real-time control loop** for continuous teleoperation
-* Implemented **motion scaling strategies** to stabilize operator input
-* Integrated **C++ hardware interface (libnifalcon)** with ROS2 nodes
-* Built a **distributed control architecture** across VR, ROS2, and simulation
-* Achieved **low-latency response suitable for real-time manipulation tasks**
-* Structured system for **simulation-to-hardware transfer**
+* Implements a **200 Hz real-time control loop** for responsive teleoperation
+* Uses **TwistStamped commands** for compatibility with MoveIt Servo
+* Applies **workspace normalization** to map Falcon input to robot motion space
+* Introduces **deadzone filtering** to suppress unintended motion
+* Integrates **low-level hardware control (libnifalcon)** with ROS2 middleware
 
 ---
 
-## 📁 Repository Structure
+## 📦 Dependencies
 
-```
-├── src/
-│   ├── falcon_interface/        # C++ interface for Novint Falcon
-│   ├── robot_control/           # ROS2 control and teleoperation nodes
-│   ├── vr_interface/            # Unity + ROS TCP integration
-│
-├── urdf/                        # Robot descriptions (URDF/XACRO)
-├── meshes/                      # STL and mesh assets
-├── launch/                      # ROS2 launch files
-├── config/                      # Configuration files
-```
+* ROS2 (Foxy / Humble)
+* MoveIt Servo
+* libnifalcon
+* geometry_msgs
 
 ---
 
 ## 🔧 Setup
 
-### Prerequisites
-
-* Ubuntu (20.04+ recommended)
-* ROS2 (Foxy / Humble)
-* Unity (for VR interface)
-* Novint Falcon device
-
----
-
-### 1. Install Dependencies
+### Install Dependencies
 
 ```bash
 sudo apt-get update
@@ -132,7 +79,7 @@ sudo apt-get install build-essential cmake libusb-1.0-0-dev
 
 ---
 
-### 2. Install libnifalcon
+### Install libnifalcon
 
 ```bash
 git clone https://github.com/libnifalcon/libnifalcon
@@ -146,7 +93,7 @@ sudo ldconfig
 
 ---
 
-### 3. Configure USB Permissions
+### Configure USB Permissions
 
 ```bash
 sudo nano /etc/udev/rules.d/99-novint.rules
@@ -154,11 +101,11 @@ sudo nano /etc/udev/rules.d/99-novint.rules
 
 Add:
 
-```bash
+```
 SUBSYSTEM=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="cb48", MODE="0666"
 ```
 
-Reload rules:
+Reload:
 
 ```bash
 sudo udevadm control --reload-rules
@@ -167,7 +114,7 @@ sudo udevadm trigger
 
 ---
 
-### 4. Build ROS2 Workspace
+### Build ROS2 Workspace
 
 ```bash
 colcon build
@@ -178,59 +125,60 @@ source install/setup.bash
 
 ## ▶️ Usage
 
-### Start Falcon Interface
+### Run the Falcon Teleoperation Node
 
 ```bash
-ros2 run falcon_interface falcon_node
+ros2 run falcon_interface falcon_servo_node
 ```
 
-### Launch Robot Simulation
+Ensure MoveIt Servo is running and subscribed to:
 
-```bash
-ros2 launch robot_control simulation.launch.py
+```
+/servo_node/delta_twist_cmds
 ```
 
-### Start VR Interface
+---
 
-* Open Unity project
-* Enable ROS-TCP Connector
-* Run the teleoperation scene
+## 📐 Control Details
+
+### Workspace Mapping
+
+* Falcon range: `[-0.06, 0.06] meters`
+* Normalized to: `[-1, 1]`
+* Scaled to velocity: `±0.2 m/s`
 
 ---
 
-## 🔬 Applications
+### Deadzone Filtering
 
-* Teleoperation for manipulation tasks
-* Human-in-the-loop robotics systems
-* Remote robotic control in hazardous environments
-* VR-based robotic training and simulation
+* Threshold: `0.05`
+* Prevents drift from small unintended inputs
 
 ---
 
-## 🔬 Future Work
+## 🔬 Future Improvements
 
-* Integration with MoveIt2 for advanced motion planning
-* Visual servoing using real-time perception feedback
-* Deployment on physical robotic arm (UR5e)
-* Force feedback modeling for enhanced haptics
-* Multi-modal perception integration
+* Add orientation control (angular velocity)
+* Integrate force feedback from robot
+* Apply smoothing filters (low-pass / exponential)
+* Add safety constraints and workspace limits
+* Integrate visual feedback (camera-based servoing)
 
 ---
+## 🎥 Demo
 
-## 📌 Key Takeaways
+### Haptic Teleoperation + Control + Testing using Panda Arm
 
-This project demonstrates:
+*https://www.youtube.com/watch?v=pp2FSn9sudI&list=PLwUycyXYUfwRI-hcJVh3UcAR0WU5qAu_A&index=1*
 
-* End-to-end robotics system integration
-* Real-time control system design
-* Human-robot interaction via haptics and VR
-* Scalable ROS2-based architecture
+### VR Integration
+https://youtube.com/shorts/qAZyyxqJ7i8
+
+> Demonstrates smooth end-effector tracking, intuitive control, and stable interaction under continuous input.
 
 ---
 
 ## 👤 Author
 
 Bhargava Ram Malladi
-Robotics Engineer | Autonomous Systems | Manipulation | Perception
-
----
+Robotics Engineer | ROS2 | Manipulation | Real-Time Control
