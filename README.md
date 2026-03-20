@@ -156,15 +156,6 @@ Ensure MoveIt Servo is running and subscribed to:
 
 ---
 
-## 🔬 Future Improvements
-
-* Add orientation control (angular velocity)
-* Integrate force feedback from robot
-* Apply smoothing filters (low-pass / exponential)
-* Add safety constraints and workspace limits
-* Integrate visual feedback (camera-based servoing)
-
----
 ## 🎥 Demo
 
 ### Haptic Teleoperation + Control + Testing using Panda Arm
